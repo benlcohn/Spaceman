@@ -5,13 +5,13 @@ const WORDS = [
   "TEST WORD 2"
 ];
 const IMGS = [
-  "imgs/spacement-0.png",
-  "imgs/spacement-1.png",
-  "imgs/spacement-2.png",
-  "imgs/spacement-3.png",
-  "imgs/spacement-4.png",
-  "imgs/spacement-5.png",
-  "imgs/spacement-6.png",
+  "imgs/spacement-0.jpg",
+  "imgs/spacement-1.jpg",
+  "imgs/spacement-2.jpg",
+  "imgs/spacement-3.jpg",
+  "imgs/spacement-4.jpg",
+  "imgs/spacement-5.jpg",
+  "imgs/spacement-6.jpg",
   
 ]
 
@@ -72,7 +72,7 @@ function getGameStatus() {
 
 function render() {
   wrongGuessesEl.textContent = wordStatus.join(' ');
-  spaceDude.src = `spacement-${wrongGuesses.length}.png`;
+  spaceDude.src = `spacement-${wrongGuesses.length}.jpg`;
   renderMessage()
 }
 
