@@ -33,7 +33,7 @@
   }
   
   h2 {
-    color: palevioletred;
+    color: black;
     font-size: 5vmin;
     display:flex;
     justify-content: center;
@@ -55,7 +55,7 @@
   
   h4{
     font-size: 5vmin;
-    color:gold;
+    color: black;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@
   button{
     height: 6vh;
     width: 8vh;
-    color: green;
+    color: black;
     padding: 0.2vmin;
     background-color: white;
     font-size: 5vh;
@@ -116,7 +116,7 @@
   }
     
   #message {
-    color: magenta;
+    color: black;
     display:flex;
     text-align: center;
     margin-left: 35%;
