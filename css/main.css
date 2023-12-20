@@ -50,7 +50,8 @@
   }
   
   #main-image {
-  display:center;
+  display: fill;
+
   }
   
   h4{
@@ -66,7 +67,7 @@
   }
   
   #spotLight{
-    color:white;
+    color:rgb(122, 122, 122);
     font-size: 5vmin;
     /* margin-left: 35%; */
     /* margin-top: 10%; */

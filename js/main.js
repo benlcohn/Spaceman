@@ -11,8 +11,7 @@ const IMGS = [
   "imgs/spacement-3.jpg",
   "imgs/spacement-4.jpg",
   "imgs/spacement-5.jpg",
-  "imgs/spacement-6.jpg",
-  
+
 ]
 
 
@@ -23,14 +22,12 @@ let wrongGuesses = [];
 let wordStatus = null;
 let gameStatus;
 
-
-
 /*----- cached elements  -----*/
 const guessedEL = document.getElementById('guessed-word');
 const messageEl = document.getElementById('message');
 const wrongGuessesEl = document.getElementById('spotLight');
 const playAgainEl = document.getElementById('playButton');
-const spaceDude = document.querySelector('img');
+const spaceBG = document.querySelector('img');
 const letterButton = [...document.querySelectorAll('main > button')];
 
 
@@ -72,7 +69,7 @@ function getGameStatus() {
 
 function render() {
   wrongGuessesEl.textContent = wordStatus.join(' ');
-  spaceDude.src = `spacement-${wrongGuesses.length}.jpg`;
+  spaceBG.src = `spacement-${wrongGuesses.length}.jpg`;
   renderMessage()
 }
 
