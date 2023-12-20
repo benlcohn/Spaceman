@@ -1,25 +1,24 @@
 /*----- constants -----*/
 const MAX_WRONG = 6
 const WORDS = [
-  "TEST WORD 1",
-  "TEST WORD 2"
+  "TEST WORD one",
+  "TEST WORD two"
 ];
 const IMGS = [
-  "imgs/spacement-0.jpg",
-  "imgs/spacement-1.jpg",
-  "imgs/spacement-2.jpg",
-  "imgs/spacement-3.jpg",
-  "imgs/spacement-4.jpg",
-  "imgs/spacement-5.jpg",
+  "imgs/spaceman-0.jpg",
+  "imgs/spaceman-1.jpg",
+  "imgs/spaceman-2.jpg",
+  "imgs/spaceman-3.jpg",
+  "imgs/spaceman-4.jpg",
+  "imgs/spaceman-5.jpg",
 
 ]
 
 
   /*----- state variables -----*/
-  ;
-let answer = "";
-let wrongGuesses = [];
-let wordStatus = null;
+let secretWord;
+let wrongGuesses;
+let wordStatus;
 let gameStatus;
 
 /*----- cached elements  -----*/
@@ -28,7 +27,7 @@ const messageEl = document.getElementById('message');
 const wrongGuessesEl = document.getElementById('spotLight');
 const playAgainEl = document.getElementById('playButton');
 const spaceBG = document.querySelector('img');
-const letterButton = [...document.querySelectorAll('main > button')];
+const letterBtns = [...document.querySelectorAll('.button-container > button')];
 
 
 /*----- event listeners -----*/
@@ -69,8 +68,9 @@ function getGameStatus() {
 
 function render() {
   wrongGuessesEl.textContent = wordStatus.join(' ');
-  spaceBG.src = `spacement-${wrongGuesses.length}.jpg`;
-  renderMessage()
+  spaceBG.src = `imgs/spaceman-${wrongGuesses.length}.jpg`;
+  playAgainEl.style.visibility = getGameStatus() ? "visible" : "hidden";
+  renderMessage();
 }
 
 function renderMessage() {
@@ -83,4 +83,8 @@ function renderMessage() {
   }
 }
 
-render()
+function renderButtons() {
+    used wrong
+    used correct
+    not used
+}
