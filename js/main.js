@@ -83,8 +83,8 @@ function renderMessage() {
   }
 }
 
-function renderButtons() {
+/*function renderButtons() {
     used wrong
     used correct
     not used
-}
+}*/
