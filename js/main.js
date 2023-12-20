@@ -5,12 +5,12 @@ const WORDS = [
   "TEST WORD two"
 ];
 const IMGS = [
-  "imgs/spaceman-0.jpg",
-  "imgs/spaceman-1.jpg",
-  "imgs/spaceman-2.jpg",
-  "imgs/spaceman-3.jpg",
-  "imgs/spaceman-4.jpg",
-  "imgs/spaceman-5.jpg",
+  "imgs/spaceman-0.png",
+  "imgs/spaceman-1.png",
+  "imgs/spaceman-2.png",
+  "imgs/spaceman-3.png",
+  "imgs/spaceman-4.png",
+  "imgs/spaceman-5.png",
 
 ]
 
@@ -68,7 +68,7 @@ function getGameStatus() {
 
 function render() {
   wrongGuessesEl.textContent = wordStatus.join(' ');
-  spaceBG.src = `imgs/spaceman-${wrongGuesses.length}.jpg`;
+  spaceBG.src = `imgs/spaceman-${wrongGuesses.length}.png`;
   playAgainEl.style.visibility = getGameStatus() ? "visible" : "hidden";
   renderMessage();
 }
