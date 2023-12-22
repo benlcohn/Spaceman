@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
@@ -27,7 +28,7 @@
     font-weight: bold;
     margin-top: 2vmin;
     color: red;
-    font-size: 10vmin;
+    font-size: 8vmin;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -35,11 +36,11 @@
   
   h2 {
     color: #EBBF5C;
-    font-size: 5vmin;
+    font-size: 4vmin;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2vmin;
+    /* margin-top: 1vmin; */
   }
   
   img{
@@ -67,10 +68,8 @@
   }
   
   #spotLight{
-    color:rgb(122, 122, 122);
+    color:rgb(172, 172, 172);
     font-size: 5vmin;
-    /* margin-left: 35%; */
-    /* margin-top: 10%; */
     letter-spacing:-10px; 
     font-family:"Verdana", "Geneva", "Tahoma", sans-serif;
     word-spacing: 30px; 
@@ -82,37 +81,52 @@
   .button-container{
     display:flex;
     justify-content: center;
+    margin-top: 1vmin;
   }
 
   
   button{
-    height: 6vh;
-    width: 8vh;
-    color: black;
+    height: 5vh;
+    width: 7vh;
+    color: rgba(0, 0, 0, 0.809);
     padding: 0.2vmin;
-    background-color: white;
-    font-size: 5vh;
-    margin-top: 4vh;
+    background-color: rgba(255, 255, 255, 0.595);
+    font-size: 4vh;
+    margin: 0.2vmin;
+    border-radius: 0.5vmin;
+  }
+
+  button:hover{
+    color: rgb(182, 194, 16);
+    background-color: rgba(255, 255, 255, 0.186);
   }
   
+  button.correct{
+    background-color: #8FC9E2;
+    color: rgba(255, 255, 255, 0.186);
+}
+
+button.wrong{
+    background-color: #AD4442;
+    color: rgba(255, 255, 255, 0.147);
+  }
+
   #playButton {
-    /* margin-top: 4vh; */
+    height: 5vmin;
+    width: 15vmin;
     padding: 0.5vmin;
+    margin-top: 3vmin;
     font-size: 2vmin;
-    /* border-radius: 5vh; */
     border: .5vh solid white;
-    color: red;
-    /* margin-left: 70%; */
-    background-color: EBBF5C;
-    display: flexbox;
+    border-radius: 3vmin;
+    background-color: #ebc05c9b;
   }
     
   #message {
-    color: black;
-    display:flex;
+    color: rgb(255, 255, 255);
     text-align: center;
-    margin-left: 35%;
-    font-size: 5vmin
+    font-size: 3vmin;
+    margin-top: 1vmin;
   }
   
   main  {

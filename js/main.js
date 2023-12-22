@@ -71,6 +71,7 @@ function render() {
   spaceBG.src = `imgs/spaceman-${wrongGuesses.length}.png`;
   playAgainEl.style.visibility = getGameStatus() ? "visible" : "hidden";
   renderMessage();
+  renderButtons();
 }
 
 function renderMessage() {
@@ -83,8 +84,15 @@ function renderMessage() {
   }
 }
 
-/*function renderButtons() {
-    used wrong
-    used correct
-    not used
-}*/
+function renderButtons() {
+    letterBtns.forEach(function(btn){
+        const letter = btn.innerText
+        if (wrongGuesses.includes(letter)) {
+            btn.className = "wrong";
+        } else if (wordStatus.includes(letter)) {
+            btn.className = "correct";
+        } else {
+            btn.className = "";
+        }
+    });
+}
