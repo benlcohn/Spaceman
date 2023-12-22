@@ -1,24 +1,22 @@
 # <Spaceman>
-A description of your game. Background info of the game is a nice touch.
-
+"Spaceman" is a hangman-style word game set in outer space. Players must guess the hidden word by selecting letters from a digital keyboard, while avoiding the wrong guesses that can lead to the poor spaceman meeting an untimely end. With each incorrect guess, another part of the spaceman's body is removed, until the player successfully completes the word, saving the spaceman from being blasted into oblivion. The game features a space themed wordbank, challenging players to put their word-guessing skills to the test and help the spaceman survive in the treacherous depths of space. Get ready to blast off into a word-guessing adventure like no other!
 # Screenshot
 
-<img src="url to your image on imgur">
-<img src="url to your image on imgur">
+<img src="https://imgur.com/a/eUi68D9">
+
 
 # Technologies Used
 
 - JavaScript
 - HTML
 - CSS
-- CardStarter CSS Library
+
 
 # Getting Started
 
-[Click to View Project Planning](your Trello url here)
-[Click to Play Connect Four!](your deployment url here)
+[Click to Play Spaceman!] https://benlcohn.github.io/spaceman/
 
 # Next Steps
 
-- Future enhancement one...
-- Future enhancement two... 
+- I would like to add a larger word bank and introduce a scoreboard element that tracks games won/lost over time.
+- In the long term, integrating sound effects and more dynamic images are two areas that would improve the polish of my spaceman game. I would also like to retire the generic astronaut images for something more personalized, potentially introducing a more specific theme to the game.

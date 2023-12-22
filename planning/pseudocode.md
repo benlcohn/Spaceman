@@ -11,4 +11,10 @@
 
 3 - Establish conditionals for win/lose variables
 
-4 - Create non-al
+4 - Create conditional functions that check state for guessed letters
+
+5- Based on state of game, display reset button.  Create alternate notifications for win/loss states
+
+6- Design an array that will display status of spaceman with visual cues
+
+7- Create function to select a random word from array to create game variance
