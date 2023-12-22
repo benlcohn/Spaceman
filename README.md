@@ -14,7 +14,7 @@
 
 # Getting Started
 
-[Click to Play Spaceman!] https://benlcohn.github.io/spaceman/
+[Click to Play Spaceman!](https://benlcohn.github.io/spaceman/)
 
 # Next Steps
 
