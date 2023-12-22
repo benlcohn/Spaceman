@@ -1,8 +1,13 @@
 /*----- constants -----*/
 const MAX_WRONG = 6
 const WORDS = [
-  "TEST WORD one",
-  "TEST WORD two"
+  "ASTEROID",
+  "BLASTOFF",
+  "ICE COMET",
+  "GALAXY",
+  "JUPITER",
+  "SPACEDUST",
+  "UNIVERSE"
 ];
 const IMGS = [
   "imgs/spaceman-0.png",
